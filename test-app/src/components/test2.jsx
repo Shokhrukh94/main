@@ -1,8 +1,12 @@
-function test2 () {
-    const expenseDate = new Date(2022, 4, 27);
-    const expenseTitle = "Dasturlash kursi";
-    const expenseAmount = 350000;
- 
-    return <div> Sana: {expenseDate.toISOString}</div>
+import React from "react"
+
+function test2(props) {
+    return (
+    <div>
+        Sana: {props.date.toISOString()}
+        <h2>Sabab: {props.title}</h2>
+        <p>Narxi: ${props.amount} </p>
+    </div>
+    );
 }
 export default test2;
