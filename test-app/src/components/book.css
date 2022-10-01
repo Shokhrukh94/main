@@ -21,3 +21,9 @@
 .book_desc {
     padding: 15px;
 }
+.border_box {
+    width: 200px;
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    padding: 15px 0;
+}
