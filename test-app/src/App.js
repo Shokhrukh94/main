@@ -1,63 +1,51 @@
 import "./App.css";
-import Test2 from "./components/test2";
+import Books from "./components/Books"
 
 function App() {
-  const expenses = [
+  const firstBook = [
     {
-      title: "Dasturlash kurslari",
-      amount: 35,
-      date: new Date(2022, 4, 27),
+      img:"https://picsum.photos/200/300",
+      title:"I'm Human",
+      author:"Nicolas Cage",
     },
     {
-      title: "Komunal harajatlar",
-      amount: 5,
-      date: new Date(2022, 4, 27),
+      img:"https://picsum.photos/200/301",
+      title:"I'm Human",
+      author:"Nicolas Cage",
     },
     {
-      title: "Yo'l kira",
-      amount: 8,
-      date: new Date(2022, 4, 27),
+      img:"https://picsum.photos/200/302",
+      title:"I'm Human",
+      author:"Nicolas Cage",
     },
     {
-      title: "Ijara",
-      amount: 70,
-      date: new Date(2022, 4, 27),
+      img:"https://picsum.photos/200/303",
+      title:"I'm Human",
+      author:"Nicolas Cage",
     },
     {
-      title: "Kiyim kechak",
-      amount: 100,
-      date: new Date(2022, 4, 27),
+      img:"https://picsum.photos/200/304",
+      title:"I'm Human",
+      author:"Nicolas Cage",
     },
   ];
 
   return (
     <div className="container">
-      <h1 className="headline">Hello World</h1>
-      <Test2
-        title={expenses[0].title}
-        amount={expenses[0].amount}
-        date={expenses[0].date}
-      />
-      <Test2
-        title={expenses[1].title}
-        amount={expenses[1].amount}
-        date={expenses[1].date}
-      />
-      <Test2
-        title={expenses[2].title}
-        amount={expenses[2].amount}
-        date={expenses[2].date}
-      />
-      <Test2
-        title={expenses[3].title}
-        amount={expenses[3].amount}
-        date={expenses[3].date}
-      />
-      <Test2
-        title={expenses[4].title}
-        amount={expenses[4].amount}
-        date={expenses[4].date}
-      />
+      <div className="book_wrapper">
+        {firstBook.map((books, index) => {
+          return (
+             <Books 
+             img={books.img}
+             title={books.title}
+             author={books.author}
+             key={index}
+              />
+                );
+                })}
+      </div>
+     
+   
     </div>
   );
 }
