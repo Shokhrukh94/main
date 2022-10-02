@@ -3,6 +3,7 @@ import './book.css'
 import Counter from "./counter";
 
 const Books = (props) => {
+    const [counter, setCounter] = useState(0);
     const [title, setTitle] = useState(props.title)
     // const clickHandler = () => {
     //     console.log("Clicked")
