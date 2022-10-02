@@ -6,6 +6,9 @@ const Counter = () => {
     const addNumberHandler = () => {
         setCounter(counter + 1);
     }
+    const minusNumberHandler = () => {
+        setCounter(counter - 1);
+    }
 
 
 
@@ -13,6 +16,8 @@ const Counter = () => {
         <div>
             <p>{counter}</p>
             <button onClick={addNumberHandler}>Add</button>
+            <button onClick={minusNumberHandler}>Minus</button>
+            <button onClick={() => setCounter (0)}>Reset</button>
         </div>
     )
 }

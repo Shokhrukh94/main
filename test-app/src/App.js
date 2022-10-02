@@ -1,6 +1,7 @@
 import "./App.css";
 import Books from "./components/Books"
 import ChildrenProp from "./components/childrenProp";
+import AddNewBook from "./components/AddNewBook"
 
 function App() {
   const firstBook = [
@@ -33,6 +34,7 @@ function App() {
 
   return (
     <div className="container">
+      <AddNewBook/> <br/>
       <div className="book_wrapper">
         {firstBook.map((books, index) => {
           return (
