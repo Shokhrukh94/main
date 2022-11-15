@@ -1,13 +1,11 @@
 import "./App.css";
-import UseEffectBasics from "./components/useEffect/useEffect-basics";
-import UseEffectCleanUp from "./components/useEffect/useEffect-cleanUp";
+import MultipleRendering from "./components/conditional-rendering/multiple-rendering";
 
 function App() {
   return (
     <>
      <div className="container">
-      <UseEffectBasics/>
-      <UseEffectCleanUp/>
+     <MultipleRendering/>
      </div>
     </>
   );
