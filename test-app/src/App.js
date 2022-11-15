@@ -1,11 +1,11 @@
 import "./App.css";
-import MultipleRendering from "./components/conditional-rendering/multiple-rendering";
+import ControlledImput from "./components/controlled-input/controlled-input";
 
 function App() {
   return (
     <>
      <div className="container">
-     <MultipleRendering/>
+     <ControlledImput/>
      </div>
     </>
   );
